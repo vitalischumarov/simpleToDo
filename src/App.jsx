@@ -12,7 +12,14 @@ function App() {
   const [listOfAllToDos, setNewToDo] = useState([]);
 
   function deleteTask(id) {
-    console.log(id);
+    let newListOfTasks = [];
+    for (let i = 0; i < listOfAllToDos.length; i++) {
+      if (id !== listOfAllToDos[i].id) {
+        newListOfTasks.push(listOfAllToDos[i]);
+      }
+    }
+    setNewToDo(newListOfTasks);
+    console.log(listOfAllToDos);
   }
 
   function pressedSaveButton() {

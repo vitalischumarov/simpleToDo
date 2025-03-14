@@ -9,7 +9,6 @@ function ToDo({ task, id, action }) {
   }
 
   function checkStatus() {
-    // const element = document.querySelector(`[checkbox-data="${id}"]`);
     if (checked) {
       setCheck(false);
       document.querySelector(`[text-data="${id}"]`).classList.remove("done");
@@ -21,7 +20,7 @@ function ToDo({ task, id, action }) {
 
   return (
     <div className="singleTodoBox">
-      <input type="checkbox" onChange={checkStatus} checkbox-data={id} />
+      <input type="checkbox" onChange={checkStatus} />
       <h3 className="todoMessage" text-data={id}>
         {task}
       </h3>
