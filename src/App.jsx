@@ -19,7 +19,6 @@ function App() {
       }
     }
     setNewToDo(newListOfTasks);
-    console.log(listOfAllToDos);
   }
 
   function pressedSaveButton() {
@@ -31,7 +30,6 @@ function App() {
 
       setNewToDo([...listOfAllToDos, todo]);
       setInput("");
-      console.log(listOfAllToDos);
     }
   }
 
@@ -55,6 +53,7 @@ function App() {
               task={element.task}
               id={element.id}
               action={deleteTask}
+              key={element.id}
             ></ToDo>
           );
         })}
