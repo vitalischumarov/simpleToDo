@@ -1,0 +1,24 @@
+.app {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(39 44 52);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 20rem;
+}
+
+.title {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.todoBlock {
+}
